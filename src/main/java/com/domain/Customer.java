@@ -29,6 +29,8 @@ public class Customer {
 		this.fullAddress = fullAddress;
 	}
 
+	
+	
 	private Integer age;
     
 
