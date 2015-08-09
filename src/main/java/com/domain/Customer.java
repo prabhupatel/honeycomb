@@ -19,8 +19,18 @@ public class Customer {
     
     private String address;
     
+    private String phoneNumber;
+    
 
-    public long getId() {
+    public String getPhoneNumber() {
+		return phoneNumber;
+	}
+
+	public void setPhoneNumber(String phoneNumber) {
+		this.phoneNumber = phoneNumber;
+	}
+
+	public long getId() {
 		return id;
 	}
 
