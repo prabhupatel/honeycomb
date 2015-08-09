@@ -19,6 +19,8 @@ public class Customer {
     
     private String fullAddress;
     
+    private String fullAddress1;
+    
     public String getFullAddress() {
 		return fullAddress;
 	}
@@ -78,6 +80,18 @@ public class Customer {
 
 	public void setAge(Integer age) {
 		this.age = age;
+	}
+
+
+
+	public String getFullAddress1() {
+		return fullAddress1;
+	}
+
+
+
+	public void setFullAddress1(String fullAddress1) {
+		this.fullAddress1 = fullAddress1;
 	}
 
 	
