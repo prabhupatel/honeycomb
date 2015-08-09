@@ -17,7 +17,17 @@ public class Customer {
     @Column(name ="last_Name")
     private String lastName;
     
-    private String address;
+    private String fullAddress;
+    
+    public String getFullAddress() {
+		return fullAddress;
+	}
+
+	public void setFullAddress(String fullAddress) {
+		this.fullAddress = fullAddress;
+	}
+
+	private Integer age;
     
 
     public long getId() {
@@ -44,14 +54,6 @@ public class Customer {
 		this.lastName = lastName;
 	}
 
-	public String getAddress() {
-		return address;
-	}
-
-	public void setAddress(String address) {
-		this.address = address;
-	}
-
 	protected Customer() {}
 
     public Customer(String firstName, String lastName) {
@@ -66,4 +68,13 @@ public class Customer {
                 id, firstName, lastName);
     }
 
+	public Integer getAge() {
+		return age;
+	}
+
+	public void setAge(Integer age) {
+		this.age = age;
+	}
+
+	
 }
